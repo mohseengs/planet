@@ -1,0 +1,13 @@
+
+  <%= form_with url: '/validate_user' do |form|%>
+    <div class="mb-3">
+        <%= form.label :username , "username", class: "form-label" %>
+        <%= form.text_field :username, class: "form-control" %>
+    </div>
+     <div class="mb-3">
+        <%= form.label :password , "password", class: "form-label" %>
+        <%= form.text_field :password, class: "form-control" %>
+    </div>
+    <%= form.submit class: "button" %>
+<% end %>
+

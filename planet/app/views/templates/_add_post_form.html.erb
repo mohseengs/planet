@@ -1,0 +1,12 @@
+<%= form_with url: '/add_post' do |form|%>
+     <div class="mb-3">
+        <%= form.label :caption , "caption", class: "form-label" %>
+        <%= form.text_field :caption, class: "form-control" %>
+    </div>
+     <div class="mb-3">
+        <%= form.label :content , "post", class: "form-label" %>
+        <%= form.file_field :content, class: "form-control" %>
+    </div>
+    <%= form.submit class: "add" %>
+<% end %>
+

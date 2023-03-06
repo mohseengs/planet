@@ -1,0 +1,29 @@
+
+  <%= form_with url: '/create_user' do |form|%>
+    <div class="mb-3">
+        <%= form.label :username , "username", class: "form-label" %>
+        <%= form.text_field :username, class: "form-control" %>
+    </div>
+     <div class="mb-3">
+        <%= form.label :name , "name", class: "form-label" %>
+        <%= form.text_field :name, class: "form-control" %>
+    </div>
+     <div class="mb-3">
+        <%= form.label :email , "email", class: "form-label" %>
+        <%= form.text_field :email, class: "form-control" %>
+    </div>
+     <div class="mb-3">
+        <%= form.label :password , "password", class: "form-label" %>
+        <%= form.text_field :password, class: "form-control" %>
+    </div>
+     <div class="mb-3">
+        <%= form.label :phone , "phone", class: "form-label" %>
+        <%= form.text_field :phone, class: "form-control" %>
+    </div>
+     <div class="mb-3">
+        <%= form.label :profile_picture , "profile picture", class: "form-label" %>
+        <%= form.file_field :profile_picture, class: "form-control" %>
+    </div>
+    <%= form.submit class: "button" %>
+<% end %>
+
