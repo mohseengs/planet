@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+<div class="row d-flex justify-content-center text-center">
+
+<div class="col-6" style="text-align : center" >
+    <%= image_tag post.content , style: "border-radius : 10px; width:100%; hight:auto; margin-top : 20px"%>
+    <h4><%= post.caption %><h4>
+</div>
+<div>
+<br>
+<% end %>
